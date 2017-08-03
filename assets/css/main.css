@@ -4136,7 +4136,7 @@
 		@media screen and (max-width: 736px) {
 
 			.post {
-				min-height: 100%;
+				min-height: 240px;
 				height: auto;
 				background-attachment: scroll;
 			}
