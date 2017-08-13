@@ -3874,11 +3874,8 @@
 		@media screen and (max-width: 736px) {
 
 			#post {
-				background: url(/images/suzyrecords.jpg) no-repeat center center fixed;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
+				background-color: white;
+				background-image: none !important;
 			}
 
 				#post h2 {
