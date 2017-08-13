@@ -3773,7 +3773,7 @@
 
 			#banner {
 				background-attachment: scroll;
-				min-height: 0;
+				height: 100%;
 				padding: 8em 2em 4em 2em;
 			}
 
@@ -4136,8 +4136,8 @@
 		@media screen and (max-width: 736px) {
 
 			.post {
-				min-height: 240px;
-				height: auto;
+
+				height: 100&;
 				background-attachment: scroll;
 			}
 
