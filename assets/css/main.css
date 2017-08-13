@@ -3271,14 +3271,11 @@
 
 	body.subpage {
 		padding-top: 3.125em;
-	  background-image: url("/images/phish.jpg");
-		/* Full height */
-    height: 100%;
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+		background: url(/images/phish.jpg) no-repeat center center fixed;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
 	}
 
 	@-moz-keyframes reveal-header {
