@@ -3272,6 +3272,13 @@
 	body.subpage {
 		padding-top: 3.125em;
 	  background-image: url("/images/phish.jpg");
+		/* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 	}
 
 	@-moz-keyframes reveal-header {
