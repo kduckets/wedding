@@ -3276,7 +3276,7 @@
 
 	body.subpage {
 		padding-top: 3.125em;
-		background: url(/images/suzyrecords.jpg) no-repeat center center fixed;
+		/*background: url(/images/suzyrecords.jpg) no-repeat center center fixed;*/
  -webkit-background-size: cover;
  -moz-background-size: cover;
  -o-background-size: cover;
