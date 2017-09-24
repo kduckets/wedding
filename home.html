@@ -158,23 +158,28 @@
 
 					<h2>RSVP</h2>
 
-<form id="mailchimp-form">   
+<form id="mailchimp-form">
+    
     <strong>Will you be able to attend? </strong>
     <br/>
     <br/>
-    <input type="radio" value="Yes" name="RSVP" id="RSVP-YES"><label for="RSVP-YES">Yes!</label> <br/>
-    <input type="radio" value="No" name="RSVP" id="RSVP-NO"><label for="RSVP-NO">Sorry, can't make it.</label>
+    <input type="radio" value="Yes" name="RSVP" id="mce-RSVP-0"><label for="mce-RSVP-0">Yes!</label> <br/>
+    <input type="radio" value="No" name="RSVP" id="mce-RSVP-1"><label for="mce-RSVP-1">Sorry, can't make it.</label>
     <br/>
 	<br/>
-	<label for="NAME">Name(s):</label>
-	<input type="text" value="" name="NAME" class="required" id="NAME">
+	<label for="mce-FNAME">Name(s):</label>
+	<input type="text" value="" name="NAME" class="required" id="mce-FNAME">
 	<br/>
-	<label for="EMAIL">Email:</label>
-	<input type="email" value="" name="EMAIL" class="required email" id="EMAIL">
+	<label for="mce-EMAIL">Email:</label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
 	<br/>
-    <input type="submit" value="submit" name="submit" id="submit" class="button">
+    <input type="submit" id="submit" class="button">
 </form>
 
+<!-- <form id="mailchimp-form">
+  <input type="email" />
+  <input type="submit" value="Submit">
+</form> -->
 
 </div>
 </div>
@@ -193,8 +198,9 @@
   				listID: 'a027be8bc5',
   				url: 'https://steph-and-kev-rsvp.herokuapp.com/',
   			onSubmit() {},
-  			onError(request) {},
+  			onError(request) {console.log(request)},
   			onSuccess(request) {}
+
 			});
 			</script>
 

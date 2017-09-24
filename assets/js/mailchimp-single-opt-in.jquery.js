@@ -18,12 +18,13 @@
       email.attr('name', 'email');
       form.submit(function (e) {
         e.preventDefault();
-        let data = { list_id: settings.listID };
+        let data = { list_id: settings.listID};
         let dataArray = form.serializeArray();
         $.each(dataArray, function (index, item) {
           data[item.name] = item.value;
         });
         settings.onSubmit();
+        console.log(data);
         $.ajax({
           method: 'POST',
           url: settings.url,
