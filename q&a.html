@@ -20,7 +20,7 @@
 					<!-- <li><a href="home.html">Home</a></li> -->
 					<li><a>Where to Stay</a></li>
 				  <li><a>Schedule and Logistics</a></li>
-					<li><a>RSVP</a></li>
+					<li><a href="#mailchimp-form">RSVP</a></li>
 					<li><a href="q&a.html">Q & A</a></li>
 					<li><a href="cats.html">Cat Pics</a></li>
 					<li><a target="_blank" href="http://batcat.stephandkev.com/">Bat Cat (The Game)</a></li>
@@ -115,50 +115,50 @@
 
 <h2>RSVP</h2>
 
-<form action="//stephandkev.us16.list-manage.com/subscribe/post?u=f74aaf4f2af7ed166742231b0&amp;id=193a45c824" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-<div class="mc-field-group input-group">
-    <strong>Will you be able to attend? 
- </strong>
-<br/>
-<br/>
- <input type="radio" value="Yes!" name="RSVP" id="mce-RSVP-0"><label for="mce-RSVP-0">Yes!</label><br/>
- <input type="radio" value="Sorry, can't make it." name="RSVP" id="mce-RSVP-1"><label for="mce-RSVP-1">Sorry, can't make it.</label>
-
-</div>
-<div class="mc-field-group">
-	<label for="mce-MMERGE2">Your Name(s):
-</label>
-	<input type="text" value="" name="MMERGE2" class="required" id="mce-MMERGE2">
-</div>
-<br/>
-<div class="mc-field-group">
-	<label for="mce-EMAIL">Email:
-</label>
+<form id="mailchimp-form">
+    
+    <strong>Will you be able to attend? </strong>
+    <br/>
+    <br/>
+    <input type="radio" value="Yes!" name="RSVP" id="mce-RSVP-0"><label for="mce-RSVP-0">Yes!</label> <br/>
+    <input type="radio" value="Sorry, can't make it." name="RSVP" id="mce-RSVP-1"><label for="mce-RSVP-1">Sorry, can't make it.</label>
+    <br/>
+	<br/>
+	<label for="mce-FNAME">Name(s):</label>
+	<input type="text" value="" name="NAME" class="required" id="mce-FNAME">
+	<br/>
+	<label for="mce-EMAIL">Email:</label>
 	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-</div>
-<br/>
-	<div id="mce-responses" class="clear">
-		<div class="response" id="mce-error-response" style="display:none"></div>
-		<div class="response" id="mce-success-response" style="display:none"></div>
-	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f74aaf4f2af7ed166742231b0_193a45c824" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-    </div>
+	<br/>
+    <input type="submit" id="submit" class="button">
 </form>
+
+<!-- <form id="mailchimp-form">
+  <input type="email" />
+  <input type="submit" value="Submit">
+</form> -->
+
 </div>
-
-
-				</div>
-			</footer>
+</div>
+</footer>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/mailchimp-single-opt-in.jquery.js"></script>	
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script src="assets/js/main.js"></script> 
+			<script>
+			$('#mailchimp-form').mailchimpSingleOptIn({
+  				listID: 'a027be8bc5',
+  				url: 'https://steph-and-kev-rsvp.herokuapp.com/',
+  			onSubmit() {},
+  			onError(request) {console.log(request)},
+  			onSuccess(request) {}
 
+			});
+			</script>
 	</body>
 </html>
