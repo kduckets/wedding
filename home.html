@@ -176,15 +176,6 @@
     <input type="submit" value="Subscribe" name="subscribe" id="subscribe" class="button">
 </form>
 
-<script>
-$('#mailchimp-form').mailchimpSingleOptIn({
-  listID: 'a027be8bc5',
-  url: 'https://steph-and-kev-rsvp.herokuapp.com/',
-  onSubmit() {},
-  onError(request) {},
-  onSuccess(request) {}
-});
-</script>
 
 </div>
 </div>
@@ -198,6 +189,15 @@ $('#mailchimp-form').mailchimpSingleOptIn({
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script> 
+			<script>
+			$('#mailchimp-form').mailchimpSingleOptIn({
+  				listID: 'a027be8bc5',
+  				url: 'https://steph-and-kev-rsvp.herokuapp.com/',
+  			onSubmit() {},
+  			onError(request) {},
+  			onSuccess(request) {}
+			});
+			</script>
 
 	</body>
 </html>
