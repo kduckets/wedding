@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Steph and Kev's Wedding Website</title>
+		<meta name="description" content="A wedding website for Stephanie Parker and Kevin DiTroia.">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="application-name" content="Steph and Kev's Wedding">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+		<link href="https://addtocalendar.com/atc/1.5/atc-style-blue.css" rel="stylesheet" type="text/css">
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-93964589-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	</head>
+	<body class="subpage">
+	<script type="text/javascript">(function () {
+            if (window.addtocalendar)if(typeof window.addtocalendar.start == "function")return;
+            if (window.ifaddtocalendar == undefined) { window.ifaddtocalendar = 1;
+                var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+                s.type = 'text/javascript';s.charset = 'UTF-8';s.async = true;
+                s.src = ('https:' == window.location.protocol ? 'https' : 'http')+'://addtocalendar.com/atc/1.5/atc.min.js';
+                var h = d[g]('body')[0];h.appendChild(s); }})();
+    </script>
+
+		<!-- Header -->
+			<header id="header" class="alt">
+				<div class="logo"><a href="home.html">Steph and Kev<span> 04.21.18</span></a></div>
+				<a href="#menu"><span>Menu</span></a>
+			</header>
+
+		<!-- Nav -->
+		<nav id="menu">
+				<ul class="links">
+					<!-- <li><a href="home.html">Home</a></li> -->
+					<li><a>Where to Stay</a></li>
+				    <li><a>Schedule and Logistics</a></li>
+					<li><a href="#rsvp-form">RSVP</a></li>
+					<li><a href="q&a.html">Q & A</a></li>
+					<li><a href="cats.html">Cat Pics</a></li>
+					<li><a target="_blank" href="http://batcat.stephandkev.com/">Bat Cat (The Game)</a></li>
+
+				</ul>
+			</nav>
+
+		<!-- Content -->
+		<!--
+			Note: To show a background image, set the "data-bg" attribute below
+			to the full filename of your image. This is used in each section to set
+			the background image.
+		-->
+			<!-- <section id="post" class="wrapper bg-img" data-bg="banner.jpg"> -->
+			<section id="post" class="wrapper bg-img">
+				<div class="inner">
+					<article class="box" style="padding:12em !important">
+						<header align="center">
+							  <h2>Thanks for RSVPing!</h2>
+
+						</header>
+						<div class="content" align="center">
+
+  				<p>We can't wait to see you there!</p>
+  				<p>    <span class="addtocalendar atc-style-blue">
+        <var class="atc_event">
+            <var class="atc_date_start">2018-04-21 16:00:00</var>
+            <var class="atc_date_end">2018-04-21 23:00:00</var>
+            <var class="atc_timezone">America/Regina</var>
+            <var class="atc_title">Steph and Kev's Wedding</var>
+            <var class="atc_description">Steph and Kev's Wedding at the Lumberyard in Huntsville, AL</var>
+            <var class="atc_location">Huntsville, AL</var>
+            <var class="atc_organizer">Steph and Kev</var>
+            <var class="atc_organizer_email">kmditroia@gmail.com</var>
+        </var>
+    </span>
+    </p>
+
+
+            </div>
+					</article>
+				</div>
+			</section>
+
+		<!-- Footer -->
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/mailchimp-single-opt-in.jquery.js"></script>	
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script> 
+			<script>
+			$('#rsvp-form').mailchimpSingleOptIn({
+  				listID: 'a027be8bc5',
+  				url: 'https://steph-and-kev-rsvp.herokuapp.com/',
+  			onSubmit() {},
+  			onError(request) {console.log(request)},
+  			onSuccess(request) {}
+
+			});
+			</script>
+	</body>
+</html>

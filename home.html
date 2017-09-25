@@ -199,7 +199,9 @@
   				url: 'https://steph-and-kev-rsvp.herokuapp.com/',
   			onSubmit() {},
   			onError(request) {console.log(request)},
-  			onSuccess(request) {}
+  			onSuccess(request) {
+  				window.location.href = "rsvp-confirmation.html";
+  			}
 
 			});
 			</script>

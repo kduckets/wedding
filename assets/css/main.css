@@ -1568,7 +1568,7 @@
 	}
 
 	body {
-		background: #222;
+		background: #fbb5b5;
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -1613,7 +1613,7 @@
 /* Type */
 
 	body {
-		background-color: #222;
+		background-color: #7f9db2;
 		color: rgba(255, 255, 255, 0.75);
 	}
 
@@ -1820,7 +1820,7 @@
 	}
 
 	 .box:hover{
-    background: rgba(0, 0, 0, 1);
+    background: #2F4F4F;
 
 	 }
 
@@ -2844,7 +2844,7 @@
 /* Wrapper */
 
 	.wrapper {
-		padding: 6em 0;
+		padding: 2em 0;
 		position: relative;
 	}
 
