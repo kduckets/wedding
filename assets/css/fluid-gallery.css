@@ -1,7 +1,6 @@
 body {
     background-color: #7f9db2;
     min-height: 100vh;
-    font: normal 16px sans-serif;
     padding: 40px 0;
 }
 
@@ -15,14 +14,11 @@ body {
 .gallery-container h1 {
     text-align: center;
     margin-top: 50px;
-    font-family: 'Droid Sans', sans-serif;
-    font-weight: bold;
 }
 
 .gallery-container p.page-description {
     text-align: center;
     margin: 25px auto;
-    font-size: 18px;
     color: #999;
 }
 
