@@ -143,10 +143,6 @@
     <input type="submit" id="submit" class="button">
 </form>
 
-<!-- <form id="mailchimp-form">
-  <input type="email" />
-  <input type="submit" value="Submit">
-</form> -->
 
 </div>
 </div>
@@ -166,9 +162,12 @@
   				url: 'https://steph-and-kev-rsvp.herokuapp.com/',
   			onSubmit() {},
   			onError(request) {console.log(request)},
-  			onSuccess(request) {}
+  			onSuccess(request) {
+  				window.location.href = "rsvp-confirmation.html";
+  			}
 
 			});
 			</script>
+
 	</body>
 </html>
