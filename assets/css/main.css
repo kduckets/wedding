@@ -3873,11 +3873,6 @@
 
 		@media screen and (max-width: 736px) {
 
-			#post {
-				background-color: white;
-				background-image: none !important;
-			}
-
 				#post h2 {
 					font-size: 1.5em;
 				}
