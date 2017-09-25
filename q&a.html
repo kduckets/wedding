@@ -130,7 +130,7 @@
     <br/>
     <br/>
     <input type="radio" value="Yes!" name="RSVP" id="mce-RSVP-0"><label for="mce-RSVP-0">Yes!</label> <br/>
-    <input type="radio" value="Sorry, can't make it." name="RSVP" id="mce-RSVP-1"><label for="mce-RSVP-1">Sorry, can't make it.</label>
+    <input type="radio" value="Sorry, can't make it." name="RSVP" id="mce-RSVP-1"><label for="mce-RSVP-1">Sorry, won't be able to make it.</label>
     <br/>
 	<br/>
 	<label for="mce-FNAME">Name(s):</label>
@@ -182,10 +182,17 @@
   			    }
   				console.log(request)},
   			onSuccess(request) {
-  				window.location.href = "rsvp-confirmation.html";
+  				if($('#mce-RSVP-0').is(':checked')) {
+  				 window.location.href = "rsvp-confirmation.html"; 
+  				}else if($('#mce-RSVP-1').is(':checked')){
+  				 window.location.href = "rsvp-no.html"; 
+  				}
+  				
   			}
 
 			});
 			</script>
+
+	</body>
 
 </html>
