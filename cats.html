@@ -24,7 +24,7 @@
 					<!-- <li><a href="home.html">Home</a></li> -->
 					<li><a>Where to Stay</a></li>
 				    <li><a>Schedule and Logistics</a></li>
-					<li><a href="#rsvp-form">RSVP</a></li>
+					<li><a href="home.html#rsvp-form">RSVP</a></li>
 					<li><a href="q&a.html">Q & A</a></li>
 					<li><a href="cats.html">Cat Pics</a></li>
 					<li><a target="_blank" href="http://batcat.stephandkev.com/">Bat Cat (The Game)</a></li>
@@ -568,12 +568,11 @@
 
 		<!-- Footer -->
 			<footer id="footer">
-<!-- 				<div class="inner">
+				<div class="inner">
 
-	<h2>RSVP</h2>
+<!-- 	<h2>RSVP</h2>
 
-<form id="rsvp-form">
-    
+<form id="rsvp-form"> 
     <strong>Will you be joining us?</strong>
     <br/>
     <br/>
@@ -582,17 +581,31 @@
     <br/>
     <br/>
     <label for="mce-FNAME">Name(s):</label>
-    <input type="text" value="" name="NAME" class="required" id="mce-FNAME">
+    <input type="text" value="" name="NAME" class="required" id="mce-FNAME" required 
+    placeholder="You and your party" 
+    oninvalid="this.setCustomValidity('Please let us know who will be joining')">
     <br/>
     <label for="mce-EMAIL">Email:</label>
-    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required
+    placeholder="Just one email will do" 
+    oninvalid="this.setCustomValidity('Please provide your email')">
     <br/>
+    <label>Message (optional):</label>
+    <input type="text" value="" name="MESSAGE" id="message"
+    placeholder="Leave us a note if you want!">
+    
+
+    <div id="showResponseArea" style="color:red">
+    <p></p>
+    </div>
+
     <input type="submit" id="submit" class="button">
-</form>
+
+</form> -->
 
 
 </div>
-</div> -->
+</div>
 </footer>
 
         <!-- Scripts -->
@@ -608,7 +621,13 @@
                 listID: 'a027be8bc5',
                 url: 'https://steph-and-kev-rsvp.herokuapp.com/',
             onSubmit() {},
-            onError(request) {console.log(request)},
+            onError(request) {
+                if(request.responseJSON.detail == 'Your merge fields were invalid.'){
+                    $("#showResponseArea p").html('Please fill out all required fields.');
+                }else{
+                $("#showResponseArea p").html(request.responseJSON.detail);
+                }
+                console.log(request)},
             onSuccess(request) {
                 window.location.href = "rsvp-confirmation.html";
             }
@@ -616,5 +635,4 @@
             });
             </script>
 
-    </body>
 </html>
