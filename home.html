@@ -216,6 +216,16 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script> 
 			<script>
+			if (/Mobi/.test(navigator.userAgent)) {
+			var bg = $("#banner");
+			function resizeBackground() {
+    		bg.height($(window).height());
+			}
+			$(window).resize(resizeBackground);
+			resizeBackground();
+		    }
+			</script>
+			<script>
 			$('#rsvp-form').mailchimpSingleOptIn({
   				listID: 'a027be8bc5',
   				url: 'https://steph-and-kev-rsvp.herokuapp.com/',
