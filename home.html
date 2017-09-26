@@ -216,15 +216,21 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script> 
 			<script>
-			if (/Mobi/.test(navigator.userAgent)) {
-			var bg = $("#banner");
-			function resizeBackground() {
-    		bg.height( $(window).height() + 60);
-			}
-			$(window).resize(resizeBackground);
-			resizeBackground();
-		    }
+		 	var $w = $(window),
+      		$background = $('#banner');
+  				// Fix background image jump on mobile
+  			if ((/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
+    		$background.css({'top': 'auto', 'bottom': 0});
+
+    		$w.resize(sizeBackground);
+    		sizeBackground();
+  			}
+
+  			function sizeBackground() {
+     		$background.height(screen.height);
+  			}	    	
 			</script>
+
 			<script>
 			$('#rsvp-form').mailchimpSingleOptIn({
   				listID: 'a027be8bc5',
