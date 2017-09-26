@@ -215,21 +215,14 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script> 
-<!-- 			<script>
-		 	var $w = $(window),
-      		$background = $('#banner');
-  				// Fix background image jump on mobile
+			
+			<script>
   			if ((/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
-    		$background.css({'top': 'auto', 'bottom': 0});
-
-    		$w.resize(sizeBackground);
-    		sizeBackground();
-  			}
-  			function sizeBackground() {
-     		$background.height(screen.height-60);
-
-  			}	    	
-			</script> -->
+    		var $hero = $('#banner'),
+    		h = window.innerHeight;
+			$hero.css('height', h);
+  			}    	
+			</script>
 
 			<script>
 			$('#rsvp-form').mailchimpSingleOptIn({
