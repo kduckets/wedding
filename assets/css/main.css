@@ -80,7 +80,7 @@
     background: -webkit-linear-gradient(#fff, #999);
     background: -o-linear-gradient(#fff, #999);
 }
-.close {
+.closeModal {
     background: #606061;
     color: #FFFFFF;
     line-height: 25px;
@@ -98,7 +98,7 @@
     -webkit-box-shadow: 1px 1px 3px #000;
     box-shadow: 1px 1px 3px #000;
 }
-.close:hover {
+.closeModal:hover {
     background: #00d9ff;
 }
 
