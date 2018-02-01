@@ -1,8 +1,8 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Steph and Kev's Wedding Website</title>
-		<meta name="description" content="A wedding website for Stephanie Parker and Kevin DiTroia.">
+		<title>Steph and Kev's Wedding Website - Q&A</title>
+		<meta name="description" content="You've got questions? We've got answers.">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="application-name" content="Steph and Kev's Wedding">
@@ -101,7 +101,7 @@
   <p>Kev: Rick and Morty</p>
 
   <h3>Favorite pet(s)?</h3>
-  <p>Steph: Wednesday the rabbit, Suzy the cat, Tux the cat, Joe and Bear and all the kittens. See 
+  <p>Steph: Wednesday the rabbit, Suzy the cat, Tux the cat, Joe and Bear and all the kittens. See
   <a href="cats.html" style="color:#fbb5b5">here</a> for more info.</p>
   <p>Kev: Joe (RIP)</p>
 
@@ -125,7 +125,7 @@
 
 <h2>RSVP</h2>
 
-<form id="rsvp-form"> 
+<form id="rsvp-form">
     <strong>Will you be joining us?</strong>
     <br/>
     <br/>
@@ -134,19 +134,19 @@
     <br/>
 	<br/>
 	<label for="mce-FNAME">Name(s):</label>
-	<input type="text" value="" name="NAME" class="required" id="mce-FNAME" required 
-	placeholder="" 
+	<input type="text" value="" name="NAME" class="required" id="mce-FNAME" required
+	placeholder=""
     oninvalid="this.setCustomValidity('Please let us know who will be joining')">
 	<br/>
 	<label for="mce-EMAIL">Email:</label>
 	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required
-	placeholder="" 
+	placeholder=""
 	oninvalid="this.setCustomValidity('Please provide your email')">
 	<br/>
 	<label>Message (optional):</label>
 	<input type="text" value="" name="MESSAGE" id="message"
 	placeholder="">
-	
+
 
 	<div id="showResponseArea" style="color:red">
     <p></p>
@@ -163,12 +163,12 @@
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/mailchimp-single-opt-in.jquery.js"></script>	
+			<script src="assets/js/mailchimp-single-opt-in.jquery.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script> 
+			<script src="assets/js/main.js"></script>
 			<script>
 			$('#rsvp-form').mailchimpSingleOptIn({
   				listID: 'a027be8bc5',
@@ -183,11 +183,11 @@
   				console.log(request)},
   			onSuccess(request) {
   				if($('#mce-RSVP-0').is(':checked')) {
-  				 window.location.href = "rsvp-confirmation.html"; 
+  				 window.location.href = "rsvp-confirmation.html";
   				}else if($('#mce-RSVP-1').is(':checked')){
-  				 window.location.href = "rsvp-no.html"; 
+  				 window.location.href = "rsvp-no.html";
   				}
-  				
+
   			}
 
 			});
