@@ -230,7 +230,11 @@
 
 	 		<script type="text/javascript">
 				$(function() {
-             window.location.href = "#openVideo";
+					if(window.location.href.indexOf("#close") > -1) {
+             window.location.href = "#";
+					 }else {
+					 	window.location.href = "#openVideo";
+					 }
 					});
 			</script>
 
