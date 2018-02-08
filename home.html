@@ -232,7 +232,11 @@
 				$(function() {
 					if(window.location.href.indexOf("#close") > -1) {
              window.location.href = "#";
-					 }else {
+					 }
+					 else if(window.location.href.indexOf("#rsvp-form") > -1) {
+				 		 window.location.href = "#rsvp-form";
+				 	 }
+					 else {
 					 	window.location.href = "#openVideo";
 					 }
 					});
