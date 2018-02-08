@@ -1638,7 +1638,7 @@
 		}
 
 	.inner {
-		width: 40em;
+		width: 68em;
 	}
 
 	@media screen and (max-width: 1280px) {
@@ -2018,7 +2018,7 @@
 			input[type="button"],
 			button,
 			.button {
-		
+
 			}
 
 		}
